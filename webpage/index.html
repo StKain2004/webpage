@@ -10,9 +10,20 @@
       line-height: 1.6;
       color: #333;
     }
-    h1 {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 {
       font-size: 28px;
-      margin-bottom: 10px;
+      margin: 0;
+    }
+    .photo {
+      width: 120px;
+      height: auto;
+      border-radius: 4px;
+      object-fit: cover;
     }
     h2 {
       font-size: 22px;
@@ -54,7 +65,10 @@
 </head>
 <body>
 
-  <h1>Popovich Daniil</h1>
+  <div class="header">
+    <h1>Popovich Daniil</h1>
+    <img src="gallery/photo.jpg" alt="photo.jpg" class="photo">
+  </div>
 
   <div class="section">
     <h2>Key Professional Competences</h2>
@@ -76,7 +90,7 @@
     <h2>Work Experience</h2>
 
     <h3 class="position">Logistics Director</h3>
-    <div class="company"><a href="https://logistics.pulse.ua/ " target="_blank">Pulse Logistics</a> | November 2020 – current time</div>
+    <div class="company"><a href="https://logistics.pulse.ua/" target="_blank">Pulse Logistics</a> | November 2020 – current time</div>
     <ul>
       <li>Reorganization of operational processes and company structure</li>
       <li>Budgeting and optimization of financial indicators</li>
@@ -122,7 +136,7 @@
     </ul>
 
     <h3 class="position">Managing Director (Ukraine)</h3>
-    <div class="company">Furkey (Turkey) Furniture</a> | December 2014 - October 2016</div>
+    <div class="company">Furkey (Turkey) Furniture | December 2014 - October 2016</div>
     <ul>
       <li>Launched representative office and logistics</li>
       <li>Developed dealer network and corporate sales</li>
@@ -188,3 +202,4 @@
 
 </body>
 </html>
+
