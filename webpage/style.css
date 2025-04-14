@@ -1,62 +1,95 @@
+/* Общие настройки */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
     margin: 40px;
-    line-height: 1.6;
-    color: #333;
+    color: #2d2d2d;
+    display: flex;
+    justify-content: center;
   }
   
+  /* Главная рамка резюме */
+  .resume-container {
+    background: #ffffff;
+    border: 2px solid #444;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 960px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Заголовок с фото */
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
   }
   
   .header h1 {
-    font-size: 28px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
     margin: 0;
+    color: #222;
   }
   
   .photo {
     width: 120px;
     height: auto;
-    border-radius: 4px;
+    border-radius: 8px;
     object-fit: cover;
+    border: 2px solid #ccc;
   }
   
-  h2 {
-    font-size: 22px;
-    color: #2a2a2a;
+  /* Секции */
+  .section {
     margin-top: 30px;
-    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Блок Key Competences */
+  .key-competences {
+    border: 1px solid #8da3b9;
+    background-color: #f3f6fa;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  .key-competences h2 {
+    font-size: 22px;
+    color: #294a70;
+    border-bottom: 1px solid #8da3b9;
     padding-bottom: 5px;
+    margin-bottom: 15px;
   }
   
-  h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 5px;
+  /* Блок Work Experience */
+  .work-block {
+    border: 1px solid #b7b7b7;
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
   }
   
-  ul {
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 5px;
-  }
-  
-  .position {
-    font-weight: bold;
+  .work-block h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI Semibold', sans-serif;
+    color: #34495e;
   }
   
   .company {
     font-style: italic;
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    color: #555;
   }
   
   .company a {
-    color: #3366cc;
+    color: #0077cc;
     text-decoration: none;
   }
   
@@ -64,12 +97,49 @@ body {
     text-decoration: underline;
   }
   
-  .section {
-    margin-top: 30px;
+  .work-block ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
   }
   
+  .work-block li {
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+  }
+  
+  /* Образование */
+  .education {
+    border: 1px solid #a3b09f;
+    background-color: #f5f8f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Cambria', serif;
+  }
+  
+  .education h2 {
+    font-size: 22px;
+    color: #3e5e3d;
+    border-bottom: 1px solid #a3b09f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .education p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Заголовки общих разделов */
+  h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  /* Нижняя панель */
   .footer {
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: center;
     font-size: 18px;
   }
